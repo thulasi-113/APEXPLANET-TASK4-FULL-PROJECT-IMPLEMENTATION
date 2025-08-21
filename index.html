@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#todo">To-Do</a></li>
+      <li><a href="#products">Products</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="portfolio-header">
+      <h1>👩‍💻 Thulasi Ethamukkala</h1>
+      <p class="tagline">Frontend Developer | B.Tech CSE Student</p>
+    </div>
+
+    <div class="portfolio-about">
+      <h2>👋 About Me</h2>
+      <p>
+        Hello! I'm <strong>Thulasi Ethamukkala</strong>, a passionate frontend developer with experience in HTML, CSS, JavaScript, and building responsive web applications. I enjoy solving problems and creating intuitive user experiences.
+      </p>
+    </div>
+
+    <div class="portfolio-skills">
+      <h2>🛠️ Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Web Design</li>
+        <li>VS Code</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-projects">
+      <h2>📁 Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>Manage your daily tasks efficiently using localStorage.</p>
+        </div>
+        <div class="project-card">
+          <h3>Product Catalog</h3>
+          <p>Browse items by category or rating with filter and sort features.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-contact">
+      <h2>📬 Contact</h2>
+      <p>Email: <a href="mailto:thulasi@example.com">thulasi@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/thulasi" target="_blank">github.com/thulasi</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/thulasi-ethamukkala" target="_blank">linkedin.com/in/thulasi-ethamukkala</a></p>
+    </div>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h1>📝 To-Do List</h1>
+    <input type="text" id="task" placeholder="Enter a new task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Listing Section -->
+  <section id="products">
+    <h1>🛍️ Product Catalog</h1>
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All Categories</option>
+      <option value="books">Books</option>
+      <option value="electronics">Electronics</option>
+    </select>
+
+    <select id="sortOption" onchange="sortProducts()">
+      <option value="default">Sort By</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div id="productList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
