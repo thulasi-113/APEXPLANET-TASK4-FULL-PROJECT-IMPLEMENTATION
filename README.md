@@ -15,4 +15,6 @@ Kindly review and provide your feedback.
 
 OUTPUT:
 
+<img width="1898" height="888" alt="Image" src="https://github.com/user-attachments/assets/d99b441b-0c36-4bb4-b6c2-b1775376963e" />
+
 <img width="1533" height="892" alt="Image" src="https://github.com/user-attachments/assets/567a44f5-b2c9-4b52-975a-c2a2522e441d" />
